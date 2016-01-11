@@ -1,0 +1,35 @@
+{
+	"name": "simple-function-utils",
+	"description": "A collection of small function utilities",
+	"version": "0.0.0",
+	"author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+	"contributors": [
+		"Hoàng Văn Khải <hvksmr1996@gmail.com>"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ksxnodemodules/simple-function-utils.git"
+	},
+	"engines": {
+		"node": ">=5.0.0"
+	},
+	"dependencies": {},
+	"files": [
+		"index.js",
+		"test.js"
+	],
+	"main": "index.js",
+	"keywords": [
+		"function",
+		"utilities"
+	],
+	"bugs": {
+		"url": "https://github.com/ksxnodemodules/function-utils/issues"
+	},
+	"homepage": "https://github.com/ksxnodemodules/function-utils#readme",
+	"scripts": {
+		"test": "node --es-staging ./test.js"
+	},
+	"tonicExampleFileName": "./test.js"
+}

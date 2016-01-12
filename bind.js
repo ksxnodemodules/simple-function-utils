@@ -12,7 +12,7 @@
 		(...rest) => fn(...rest, ...args);
 
 	bind.middle = (fn, begin, end, ...middle) =>
-		(...args) => fn(...[...args.slice(0, begin), ...middle, ...args.slice(-end)]);
+		(...args) => fn(...[...args.slice(0, begin), ...middle, ...(end ? args.slice(-end) : [])]);
 
 	bind.pack = (fn) =>
 		(...args) => fn(args);

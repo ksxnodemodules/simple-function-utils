@@ -15,16 +15,6 @@
 		"node": ">=5.0.0"
 	},
 	"dependencies": {},
-	"files": [
-		"index.js",
-		"bind.js",
-		"chain-function.js",
-		"functionize-class.js",
-		"repeat.js",
-		"ternary.js",
-		"transform.js",
-		"try-catch.js"
-	],
 	"main": "index.js",
 	"keywords": [
 		"function",

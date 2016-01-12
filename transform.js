@@ -10,4 +10,7 @@
 			frontend(...backend(...args));
 	}
 
+	transform.serial = (fn, ...fnlist) =>
+		fnlist.length ? transform(fn, transform.serial(...fnlist)) : fn;
+
 })(module);

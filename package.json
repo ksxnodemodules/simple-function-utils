@@ -1,7 +1,7 @@
 {
 	"name": "simple-function-utils",
 	"description": "A collection of small function utilities",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
 	"contributors": [
 		"Hoàng Văn Khải <hvksmr1996@gmail.com>"
@@ -17,7 +17,13 @@
 	"dependencies": {},
 	"files": [
 		"index.js",
-		"test.js"
+		"bind.js",
+		"chain-function.js",
+		"functionize-class.js",
+		"repeat.js",
+		"ternary.js",
+		"transform.js",
+		"try-catch.js"
 	],
 	"main": "index.js",
 	"keywords": [

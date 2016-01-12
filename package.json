@@ -16,8 +16,7 @@
 	},
 	"dependencies": {},
 	"files": [
-		"index.js",
-		"test.js"
+		"./"
 	],
 	"main": "index.js",
 	"keywords": [

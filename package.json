@@ -1,7 +1,7 @@
 {
 	"name": "simple-function-utils",
 	"description": "A collection of small function utilities",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
 	"contributors": [
 		"Hoàng Văn Khải <hvksmr1996@gmail.com>"
@@ -21,9 +21,9 @@
 		"utilities"
 	],
 	"bugs": {
-		"url": "https://github.com/ksxnodemodules/function-utils/issues"
+		"url": "https://github.com/ksxnodemodules/simple-function-utils/issues"
 	},
-	"homepage": "https://github.com/ksxnodemodules/function-utils#readme",
+	"homepage": "https://github.com/ksxnodemodules/simpel-function-utils#readme",
 	"scripts": {
 		"test": "node --es-staging ./test/main.js"
 	},

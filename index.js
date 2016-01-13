@@ -4,7 +4,7 @@
 
 	module.exports = {
 		bind: require('./bind.js'),
-		culmulation: require('./culmulation.js'),
+		culmulate: require('./culmulate.js'),
 		chainFunction: require('./chain-function.js'),
 		functionizeClass: require('./functionize-class.js'),
 		repeat: require('./repeat.js'),

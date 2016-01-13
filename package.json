@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/ksxnodemodules/function-utils#readme",
 	"scripts": {
-		"test": "node --es-staging ./test.js"
+		"test": "node --es-staging ./test/index.js"
 	},
-	"tonicExampleFileName": "./test.js"
+	"tonicExampleFileName": "./test/index.js"
 }

@@ -21,9 +21,9 @@
 		"utilities"
 	],
 	"bugs": {
-		"url": "https://github.com/ksxnodemodules/function-utils/issues"
+		"url": "https://github.com/ksxnodemodules/simple-function-utils/issues"
 	},
-	"homepage": "https://github.com/ksxnodemodules/function-utils#readme",
+	"homepage": "https://github.com/ksxnodemodules/simpel-function-utils#readme",
 	"scripts": {
 		"test": "node --es-staging ./test/main.js"
 	},

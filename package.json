@@ -1,7 +1,7 @@
 {
 	"name": "simple-function-utils",
 	"description": "A collection of small function utilities",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
 	"contributors": [
 		"Hoàng Văn Khải <hvksmr1996@gmail.com>"
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/ksxnodemodules/function-utils#readme",
 	"scripts": {
-		"test": "node --es-staging ./test.js"
+		"test": "node --es-staging ./test/main.js"
 	},
-	"tonicExampleFileName": "./test.js"
+	"tonicExampleFileName": "./test/main.js"
 }

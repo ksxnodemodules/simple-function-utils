@@ -3,7 +3,7 @@
 	'use strict';
 
 	var culmulate = module.exports = (fn, left, right, ...rest) =>
-		fn(rest.length ? culmulate(fn, right, ...rest) : right);
+		fn(left, rest.length ? culmulate(fn, right, ...rest) : right);
 
 	culmulate.of = (fn) =>
 		(...operand) => culmulate(fn, ...operand);

@@ -26,6 +26,5 @@
 	"homepage": "https://github.com/ksxnodemodules/simpel-function-utils#readme",
 	"scripts": {
 		"test": "node --es-staging ./test/main.js"
-	},
-	"tonicExampleFileName": "./test/main.js"
+	}
 }

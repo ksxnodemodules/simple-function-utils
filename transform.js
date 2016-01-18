@@ -4,20 +4,20 @@
 
 	var chainFunction = require('./chain-function.js');
 
-	var transform = module.exports = (frontend, ...backend) => {
+	var compose = module.exports = (frontend, ...backend) => {
 		backend = chainFunction(...backend);
 		return (...args) =>
 			frontend(...backend(...args));
 	}
 
-	transform.serial = (fn, ...fnlist) =>
-		fnlist.length ? transform(fn, transform.serial(...fnlist)) : fn;
+	compose.serial = (fn, ...fnlist) =>
+		fnlist.length ? compose(fn, compose.serial(...fnlist)) : fn;
 
-	transform.serial.tree = (...fntree) =>
-		transform.serial(
+	compose.serial.tree = (...fntree) =>
+		compose.serial(
 			...fntree.map(
 				(fntree) =>
-					typeof fntree === 'function' ? fntree : transform.serial.tree(...fntree)
+					typeof fntree === 'function' ? fntree : compose.serial.tree(...fntree)
 			)
 		);
 

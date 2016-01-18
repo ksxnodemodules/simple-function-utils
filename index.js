@@ -4,11 +4,11 @@
 
 	module.exports = {
 		bind: require('./bind.js'),
+		compose: require('./compose.js'),
 		culmulate: require('./culmulate.js'),
 		chainFunction: require('./chain-function.js'),
 		functionizeClass: require('./functionize-class.js'),
 		repeat: require('./repeat.js'),
-		transform: require('./transform.js'),
 		ternary: require('./ternary.js'),
 		tryCatch: require('./try-catch.js')
 	};

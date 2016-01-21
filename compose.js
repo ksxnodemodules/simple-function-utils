@@ -4,11 +4,8 @@
 
 	var chainFunction = require('./chain-function.js');
 
-	var compose = module.exports = (frontend, ...backend) => {
-		backend = chainFunction(...backend);
-		return (...args) =>
-			frontend(...backend(...args));
-	}
+	var compose = module.exports = (frontend, ...backend) =>
+		compose.mkargs(frontend, chainFunction(...backend));
 
 	compose.serial = (fn, ...fnlist) =>
 		fnlist.length ? compose(fn, compose.serial(...fnlist)) : fn;

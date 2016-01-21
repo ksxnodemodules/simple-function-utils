@@ -21,4 +21,7 @@
 			)
 		);
 
+	compose.processArguments = (frontend, backend) =>
+		(...args) => frontend(...args.map(backend));
+
 })(module);

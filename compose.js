@@ -24,7 +24,15 @@
 	compose.mkargs = (frontend, backend) =>
 		(...args) => frontend(...backend(...args));
 
+	compose.mkargs.serial = (fn, ...fnlist) =>
+		fnlist.length ? compose.mkargs(fn, compose.mkargs.serial(...fnlist)) : fn;
+
 	compose.mkargs.each = (fn, process) =>
 		compose.mkargs(fn, (...args) => args.map(process));
+
+	compose.mkargs.reverse = (fn) =>
+		compose.mkargs(fn, REVERSE_ARGUMENTS);
+
+	const REVERSE_ARGUMENTS = (...args) => args.reverse();
 
 })(module);

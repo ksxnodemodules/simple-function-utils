@@ -21,7 +21,10 @@
 			)
 		);
 
-	compose.processArguments = (frontend, backend) =>
-		(...args) => frontend(...args.map(backend));
+	compose.mkargs = (frontend, backend) =>
+		(...args) => frontend(...backend(...args));
+
+	compose.mkargs.each = (fn, process) =>
+		compose.mkargs(fn, (...args) => args.map(process));
 
 })(module);

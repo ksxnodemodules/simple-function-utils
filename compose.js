@@ -32,4 +32,17 @@
 
 	const REVERSE_ARGUMENTS = (...args) => args.reverse();
 
+	compose.if = (check, iftrue, iffalse) => {
+		if (typeof iffalse !== 'function') {
+			iffalse = DONOTHING;
+		}
+		return (...args) =>
+			(check(...args) ? iftrue : iffalse)(...args);
+	}
+
+	const DONOTHING = () => {};
+
+	compose.if.not = (check, ...args) =>
+		compose.if((...args) => !check(...args), ...args);
+
 })(module);

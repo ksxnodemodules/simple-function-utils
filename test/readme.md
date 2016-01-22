@@ -8,7 +8,7 @@
 ## Dependencies
 
  * [x-iterable](https://www.npmjs.com/package/x-iterable) v2.4.1 or later
- * [simple-function-utils](../)
+ * [simple-function-utils](https://www.npmjs.com/package/simple-function-utils)
 
 ## Run test
 
@@ -24,6 +24,5 @@ npm test
 ### Using `require` in Node
 
 1. Open Node console with `--es-staging` flag
- * Open terminal and enter `node --es-staging`
 
 2. Enter `require('simple-function-utils/test')`

@@ -4,6 +4,7 @@
 
 	module.exports = {
 		bind: require('./bind.js'),
+		boolean: require('./boolean.js'),
 		compose: require('./compose.js'),
 		culmulate: require('./culmulate.js'),
 		chainFunction: require('./chain-function.js'),

@@ -1,0 +1,12 @@
+{
+	"engines": {
+		"node": ">=5.0.0"
+	},
+	"dependencies": {
+		"x-iterable": "> 2.4.0"
+	},
+	"main": "index.js",
+	"scripts": {
+		"test": "node --es-staging ./main.js"
+	}
+}

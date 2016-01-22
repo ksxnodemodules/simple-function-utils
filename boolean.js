@@ -2,6 +2,14 @@
 ((module) => {
 	'use strict';
 
+	var mkserial = (fn) =>
+		fn.serial = (first, second, ...rest) =>
+			fn(first, rest.length ? fn.serial(second, ...rest) : second);
+
+
+	var equal = (first, second) =>
+		(...args) => Object.is(first(...args), second(...args));
+
 	var boolean = module.exports = (fn) =>
 		(...args) => Boolean(fn(...args));
 
@@ -27,12 +35,5 @@
 		boolean.not(boolean.xnor(...args));
 
 	mkserial(boolean.xor);
-
-	var mkserial = (fn) =>
-		fn.serial = (first, second, ...rest) =>
-			fn(first, rest.length ? fn.serial(second, ...rest) : second);
-
-	var equal = (first, second) =>
-		(...args) => Object.is(first(...args), second(...args));
 
 })(module);

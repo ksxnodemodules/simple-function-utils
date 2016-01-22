@@ -29,11 +29,7 @@
 	boolean.xnor = (first, second) =>
 		equal(boolean(first), boolean(second));
 
-	mkserial(boolean.xnor);
-
 	boolean.xor = (...args) =>
 		boolean.not(boolean.xnor(...args));
-
-	mkserial(boolean.xor);
 
 })(module);

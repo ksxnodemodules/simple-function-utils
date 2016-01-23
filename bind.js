@@ -20,4 +20,13 @@
 	bind.unpack = (fn) =>
 		(...args) => fn(...args.reduce((out, args) => [...out, ...args], []));
 
+	bind.method = (fn) =>
+		({method(...args) {return fn(this, ...args)}}).method;
+
+	bind.method.chainable = (fn) =>
+		bind.method((self, ...args) => (fn(self, ...args), self));
+
+	bind.method.selfend = (fn) =>
+		bind.method((self, ...args) => fn(...args, self));
+
 })(module);

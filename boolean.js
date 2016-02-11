@@ -13,7 +13,6 @@
 		}
 	};
 
-
 	var equal = (first, second) =>
 		(...args) => Object.is(first(...args), second(...args));
 

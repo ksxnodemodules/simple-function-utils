@@ -6,7 +6,7 @@
 		bind: require('./bind.js'),
 		boolean: require('./boolean.js'),
 		compose: require('./compose.js'),
-		culmulate: require('./culmulate.js'),
+		cumulate: require('./cumulate.js'),
 		chainFunction: require('./chain-function.js'),
 		functionizeClass: require('./functionize-class.js'),
 		repeat: require('./repeat.js'),
